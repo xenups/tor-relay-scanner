@@ -1,6 +1,18 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+[project]
+name = "tor-relay-scanner"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "xenups",email = "xenups@outlook.com"}
 ]
-build-backend = "setuptools.build_meta"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "aiohttp (>=3.12.14,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
